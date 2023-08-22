@@ -1,23 +1,26 @@
 //  =========== VARIABLES ===========
 
 // COLORS
-$color-ultra-dark: #101010;
-$color-dark: #1d1d1d;
-$color-dark-fade: #272727;
-$color-dark-hover: #333333;
 $color-light: #ffffff;
-$color-oranage: #ff5400;
-$color-red: #ff0003;
-$color-red-hover: #d93d3f;
-$color-light-gray: #b7b7b7;
-$color-medium-gray: #909090;
-$color-dark-gray: #6d6d6d;
+
+$color-gray-light: #dee1e6;
+$color-gray-faded: #f5f5f5;
+
+$color-blue: #25396f;
+$color-blue-faded: #7C8DB5;
+
+$color-purple: #51459e;
+$color-purple-light: #505887;
+$color-purple-faded: #ebedfb;
+
+$color-aquamarine: #84e8f4;
+$color-tomato-light: #FF6E91;
+
+
 
 // FONTS
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-lato: 'Lato', sans-serif;
-$font-family-roboto: 'Roboto', sans-serif;
-$font-family-quantico: 'Quantico', sans-serif;
+
 
 // BREAKPOINTS
 $xs: 0;
