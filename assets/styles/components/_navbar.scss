@@ -1,16 +1,34 @@
 .navbar {
-    padding: 30px;
+    padding: 20px;
     border-bottom: 1px solid $color-gray-faded;
 
+    @media (min-width: $lg) {
+        padding: 30px;
+    }
+
     &__logo-container {
-        width: 251px;
+        
+
+        @media (min-width: $lg) {
+            width: 251px;
+        }
+
+        p {
+            white-space: nowrap;
+
+            @media (max-width: $lg) {
+                display: none;
+            }
+        }
 
         .menu-icon-container {
-
             padding: 10px;
             transition: all 0.2s;
+            display: none;
 
-            
+            @media (max-width: $xl) {
+                display: block;
+            }
 
             &:hover {
                 background-color: $color-purple-faded;
@@ -18,14 +36,100 @@
             }
 
             img {
-                width: 20px;
-                height: 20px;
+                width: 25px;
+                height: 25px;
+                margin-top: 7.5px;
             }
         }
     }
 
     &__inputs {
-        // 
+
+        .search-input-container,
+        .select-input-container>select {
+            height: 64px;
+            border: 1px solid #F0F0F0;
+
+            @media (max-width: $lg) {
+                height: 54px;
+            }
+        }
+
+
+        .search-input-container {
+
+            width: 300px;
+            padding: 20px 25px;
+            overflow: hidden;
+
+            @media (max-width:$lg) {
+                padding: 15px;
+            }
+
+
+            @media (min-width:$xl) {
+                min-width: 380px;
+            }
+
+
+            @media (min-width:$xxl) {
+                min-width: 480px;
+            }
+
+
+         
+
+            .search-icon-container {
+                top: 0;
+                bottom: 0;
+                left: 25px;
+                margin: auto;
+
+                img {
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+
+            input {
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 55px;
+                width: 85%;
+                height: 100%;
+            }
+        }
+
+        .select-input-container {
+
+
+            @media (min-width:$md) {
+                min-width: 217px;
+            }
+
+
+            .custom-select {
+                padding: 20px 25px;
+
+                @media (max-width: $lg) {
+                    padding: 15px;
+                }
+
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                
+                margin-right: 10px;
+                background-image: url('/assets/images/icons/down-arrow.svg');
+                background-repeat: no-repeat;
+                background-position: 95% center;
+                cursor: pointer;
+
+            }
+
+
+        }
     }
 
     &__bell-and-profile {
@@ -37,6 +141,15 @@
                 height: 50px;
                 object-fit: cover;
             }
+        }
+
+        .user-info-container {
+            display: none;
+
+            @media (min-width:$lg) {
+                display: block;
+            }
+
         }
     }
 }
