@@ -1,0 +1,28 @@
+@import './text';
+@import './layout';
+@import './positions';
+@import './width-height';
+@import './border-radius';
+
+
+/* ===== MARGIN || PADDING CSS ===== */
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== DISPLAY ===== */
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+/* ===== BACKGROUND COLOR ===== */
+.bg-light {
+    background-color: $color-light;
+}
+
+

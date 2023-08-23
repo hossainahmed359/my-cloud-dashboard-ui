@@ -1,0 +1,42 @@
+.navbar {
+    padding: 30px;
+    border-bottom: 1px solid $color-gray-faded;
+
+    &__logo-container {
+        width: 251px;
+
+        .menu-icon-container {
+
+            padding: 10px;
+            transition: all 0.2s;
+
+            
+
+            &:hover {
+                background-color: $color-purple-faded;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    &__inputs {
+        // 
+    }
+
+    &__bell-and-profile {
+        .profile-icon-container {
+            overflow: hidden;
+
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+            }
+        }
+    }
+}
