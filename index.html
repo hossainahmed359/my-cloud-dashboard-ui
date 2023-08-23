@@ -69,7 +69,7 @@
   <main class="main-content flex justify-start items-start">
     <!-- ========================== ASIDE || SECTION ========================== -->
     <aside class="sidebar-left fixed h-screen scrollbox z-10">
-      <div  class="sidebar-left__contents ">
+      <div class="sidebar-left__contents">
         <ul class="option-list-container options-top grid w-100">
           <li class="option active flex-center flex-col gap-4">
             <div class="option-body  rounded-md flex-center">
@@ -151,9 +151,78 @@
       </div>
     </aside>
     <!-- ========================== MAIN || SECTION ========================== -->
-    <section class="page-content flex-1 d-none">Main Section</section>
+    <section class="page-content flex-1 w-100">
+      <div class="page-content__contents">
+        <div class="folder-card-list flex-start gap-5">
+          <div class="card design rounded-md relative flex items-start justify-center flex-col gap-4">
+            <button class="more-btn absolute z-10 flex-center">
+              <img src="/assets/images/icons/three-dots.svg" alt="">
+            </button>
+            <div class="flex-center">
+              <img src="/assets/images/card-folder-icons/Design.svg" alt="folder-icon">
+            </div>
+            <p class="font-xl font-weight-500 color-purple-light">Design</p>
+            <div class="flex-between font-sm font-weight-400 color-sky-light w-100 ">
+              <p>17 files</p>
+              <p>12 GB</p>
+            </div>
+          </div>
+          <div class="card documents rounded-md relative flex items-start justify-center flex-col gap-4">
+            <button class="more-btn absolute z-10 flex-center">
+              <img src="/assets/images/icons/three-dots.svg" alt="">
+            </button>
+            <div class="flex-center">
+              <img src="/assets/images/card-folder-icons/Documents.svg" alt="folder-icon">
+            </div>
+            <p class="font-xl font-weight-500 color-purple-light">Documents</p>
+            <div class="flex-between font-sm font-weight-400 color-sky-light w-100 ">
+              <p>17 files</p>
+              <p>12 GB</p>
+            </div>
+          </div>
+          <div class="card music rounded-md relative flex items-start justify-center flex-col gap-4">
+            <button class="more-btn absolute z-10 flex-center">
+              <img src="/assets/images/icons/three-dots.svg" alt="">
+            </button>
+            <div class="flex-center">
+              <img src="/assets/images/card-folder-icons/Group-folders.svg" alt="folder-icon">
+            </div>
+            <p class="font-xl font-weight-500 color-purple-light">Music</p>
+            <div class="flex-between font-sm font-weight-400 color-sky-light w-100 ">
+              <p>17 files</p>
+              <p>12 GB</p>
+            </div>
+          </div>
+          <div class="card images rounded-md relative flex items-start justify-center flex-col gap-4">
+            <button class="more-btn absolute z-10 flex-center">
+              <img src="/assets/images/icons/three-dots.svg" alt="">
+            </button>
+            <div class="flex-center">
+              <img src="/assets/images/card-folder-icons/Images.svg" alt="folder-icon">
+            </div>
+            <p class="font-xl font-weight-500 color-purple-light">Images</p>
+            <div class="flex-between font-sm font-weight-400 color-sky-light w-100 ">
+              <p>17 files</p>
+              <p>12 GB</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- <div>Quick Access</div>
+        <div>
+          <div>Recently Uploaded</div>
+          <div>File Manager</div>
+        </div> -->
+      </div>
+    </section>
     <!-- ========================== OFFCANVAS || SECTION ========================== -->
-    <section class="sidebar-right fixed h-screen d-none">Right Offcanvas</section>
+    <section class="sidebar-right fixed h-screen d-none">
+      <div class="sidebar-right__contents">
+        Right Offcanvas
+      </div>
+    </section>
   </main>
   <!-- ========================== FOOTER ========================== -->
   <!-- <footer class="footer">Footer</footer> -->

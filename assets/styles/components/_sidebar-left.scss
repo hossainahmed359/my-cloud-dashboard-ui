@@ -4,28 +4,12 @@
 
 .sidebar-left {
 
-   
     border-right: 1px solid $color-gray-faded;
     background: $color-light;
     background-color: $color-light;
     position: relative;
 
-
-
-    @media (max-width: $lg) {
-        padding-top: 99px;
-        width: 251px;
-    }
-
-
-    @media (min-width: $lg) {
-        padding-top: 99px;
-        
-        width: 270px;
-    }
-
     &__contents {
-        padding: 33px 20px;
 
         @media (max-width: $lg) {
             width: 246px;
@@ -33,18 +17,11 @@
     
     
         @media (min-width: $lg) {
-            
             width: 265px;
-        }
-
-        @media (min-width: $lg) {
-            padding: 33px 40px;
         }
 
 
         .option-list-container {
-
-           
             grid-template-columns: repeat(2, 1fr);
             column-gap: 50px;
             row-gap: 30px;

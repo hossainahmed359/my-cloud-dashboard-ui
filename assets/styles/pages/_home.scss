@@ -5,11 +5,37 @@
 
     .main-content {
 
+        .sidebar-left,.page-content,.sidebar-right {
+            @media (max-width: $lg) {
+                padding-top: 99px;
+            }
+
+
+            @media (min-width: $lg) {
+                padding-top: 99px;
+            }
+
+            &__contents {
+                padding: 33px 20px;
 
         
-        // .sidebar-left {
+                @media (min-width: $lg) {
+                    padding: 33px 40px;
+                }
+        
+            }
+        }
 
-        // }
+        .sidebar-left {
+            @media (max-width: $lg) {
+                width: 251px;
+            }
+
+
+            @media (min-width: $lg) {
+                width: 270px;
+            }
+        }
 
         // .page-content {
 
