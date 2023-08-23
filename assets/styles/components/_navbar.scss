@@ -1,9 +1,9 @@
 .navbar {
-    padding: 20px;
+    padding: 20px 35px;
     border-bottom: 1px solid $color-gray-faded;
 
     @media (min-width: $lg) {
-        padding: 30px;
+        padding: 19px 40px;
     }
 
     &__logo-container {

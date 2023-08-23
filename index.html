@@ -16,7 +16,7 @@
 
 <!-- ========================== MAIN BODY ========================== -->
 
-<body id="home" class="">
+<body id="home" class="home">
   <!-- ========================== HEADER ========================== -->
   <header class="navbar fixed z-10 w-100 flex justify-between items-center bg-light gap-5">
     <!-- LOGO & ASIDE OPENER BTN -->
@@ -66,16 +66,84 @@
     </div>
   </header>
   <!-- ========================== MAIN ========================== -->
-  <main>
+  <main class="main-content flex justify-start items-start">
     <!-- ========================== ASIDE || SECTION ========================== -->
-    <aside>Left Section</aside>
+    <aside class="sidebar-left fixed h-screen">
+      <div class="sidebar-left__contents">
+        <ul  class="option-list-container options-top grid gap-7 w-100">
+          <li class="option active flex-center flex-col gap-4">
+            <div class="option-body  rounded-md flex-center">
+              <img src="/assets/images/icons/dashboard.svg" alt="Dashboard">
+            </div>
+            <p class="font-sm font-weight-500">Dashboard</p>
+          </li>
+          <li class="option flex-center flex-col gap-4">
+            <div class="option-body rounded-md flex-center">
+              <img src="/assets/images/icons/layout-grid.svg" alt="Dashboard">
+            </div>
+            <p class="font-sm font-weight-500">All Files</p>
+          </li>
+          <li class="option flex-center flex-col gap-4">
+            <div class="option-body rounded-md flex-center">
+              <img src="/assets/images/icons/share.svg" alt="Dashboard">
+            </div>
+            <p class="font-sm font-weight-500">Shared</p>
+          </li>
+          <li class="option flex-center flex-col gap-4">
+            <div class="option-body rounded-md flex-center">
+              <img src="/assets/images/icons/heart.svg" alt="Dashboard">
+            </div>
+            <p class="font-sm font-weight-500">Favorites</p>
+          </li>
+          <li class="option flex-center flex-col gap-4">
+            <div class="option-body rounded-md flex-center">
+              <img src="/assets/images/icons/recent.svg" alt="Dashboard">
+            </div>
+            <p class="font-sm font-weight-500">Recent</p>
+          </li>
+          <li class="option flex-center flex-col gap-4">
+            <div class="option-body rounded-md flex-center">
+              <img src="/assets/images/icons/scale.svg" alt="Dashboard">
+            </div>
+            <p class="font-sm font-weight-500">Request</p>
+          </li>
+        </ul>
+
+        <ul class="option-list-container options-bottom grid gap-6">
+          <li class="option flex-center flex-col gap-4">
+            <div class="option-body rounded-md flex-center">
+              <img src="/assets/images/icons/camera.svg" alt="Dashboard">
+            </div>
+            <p class="font-sm font-weight-500">Pictures</p>
+          </li>
+          <li class="option flex-center flex-col gap-4">
+            <div class="option-body rounded-md flex-center">
+              <img src="/assets/images/icons/video-camera.svg" alt="Dashboard">
+            </div>
+            <p class="font-sm font-weight-500">Videos</p>
+          </li>
+          <li class="option flex-center flex-col gap-4">
+            <div class="option-body rounded-md flex-center">
+              <img src="/assets/images/icons/file.svg" alt="Dashboard">
+            </div>
+            <p class="font-sm font-weight-500">Documents</p>
+          </li>
+          <li class="option flex-center flex-col gap-4">
+            <div class="option-body rounded-md flex-center">
+              <img src="/assets/images/icons/file-edit.svg" alt="Dashboard">
+            </div>
+            <p class="font-sm font-weight-500">Signed</p>
+          </li>
+        </ul>
+      </div>
+    </aside>
     <!-- ========================== MAIN || SECTION ========================== -->
-    <section>Main Section</section>
+    <section class="page-content flex-1 d-none">Main Section</section>
     <!-- ========================== OFFCANVAS || SECTION ========================== -->
-    <section>Right Offcanvas</section>
+    <section class="sidebar-right fixed h-screen d-none">Right Offcanvas</section>
   </main>
   <!-- ========================== FOOTER ========================== -->
-  <footer>Footer</footer>
+  <!-- <footer class="footer">Footer</footer> -->
 
   <script type="module" src="/main.js"></script>
 </body>
