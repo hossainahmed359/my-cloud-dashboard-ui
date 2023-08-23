@@ -1,0 +1,33 @@
+.scrollbox {
+  
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        opacity: 0;
+        width: 0px;
+    }
+}
+
+.scrollbox:hover {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(81, 69, 158, 0.5);
+    }
+}
+
+@media (hover: none) {
+    .scrollbox {
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(81, 69, 158, 0.5);
+        }
+    }
+}
