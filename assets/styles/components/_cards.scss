@@ -70,16 +70,20 @@
 
     .card {
 
-        min-width: 226px;
         overflow: hidden;
+        // min-width: 200px;
+
+        @media (min-width: $xl) {
+            min-width: 226px;
+        }
+
+       
 
         &__top {
             height: 117px;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-
-
         }
 
         &__bottom {
