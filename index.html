@@ -382,12 +382,48 @@
     <section class="sidebar-right fixed h-screen z-10">
       <div class="sidebar-right__contents grid gap-10">
         <!-- USAGE STATS -->
-        <div>
+        <div class="usage-stats">
           <h2 class="section-title font-xxl color-purple-dark font-weight-600">Usage Stats</h2>
+          <div class="chart-container w-100 relative">
+            <!-- VERTICAL TEXTS -->
+            <div class="vertical-texts absolute flex flex-col justify-center items-start gap-3">
+              <p class="font-xs font-weight-400 color-gray">25k</p>
+              <p class="font-xs font-weight-400 color-gray">20k</p>
+              <p class="font-xs font-weight-400 color-gray">15k</p>
+              <p class="font-xs font-weight-400 color-gray">10k</p>
+              <p class="font-xs font-weight-400 color-gray">5k</p>
+              <p class="font-xs font-weight-400 color-gray">1k</p>
+            </div>
+
+            <!-- CHART -->
+            <div class="chart w-100 h-100 flex justify-start items-end gap-1">
+              <div class="bar bar-purple rounded-sm" style="height: 18.095px;"></div>
+              <div class="bar bar-aquamrine rounded-sm" style="height: 58.164px;"></div>
+              <div class="bar bar-purple rounded-sm" style="height: 71.089px;"></div>
+              <div class="bar bar-aquamrine rounded-sm" style="height: 107.279px;"></div>
+              <div class="bar bar-purple rounded-sm" style="height: 88.538px;"></div>
+              <div class="bar bar-aquamrine rounded-sm" style="height: 120.851px;"></div>
+              <div class="bar bar-purple rounded-sm" style="height: 96.939px;"></div>
+              <div class="bar bar-aquamrine rounded-sm" style="height: 71.089px;"></div>
+              <div class="bar bar-purple rounded-sm" style="height: 87.892px;"></div>
+              <div class="bar bar-aquamrine rounded-sm" style="height: 63.334px;"></div>
+              <div class="bar bar-purple rounded-sm" style="height: 38.776px;"></div>
+            </div>
+
+            <!-- HORIZONTAL TEXTS TEXTS -->
+            <div class="horizontal-texts absolute flex justify-start items-center gap-7">
+              <p class="font-xs font-weight-400 color-blue-light">JAN</p>
+              <p class="font-xs font-weight-400 color-blue-light">FEB</p>
+              <p class="font-xs font-weight-400 color-blue-light">MAR</p>
+              <p class="font-xs font-weight-400 color-blue-light">APR</p>
+              <p class="font-xs font-weight-400 color-blue-light">MAY</p>
+              <p class="font-xs font-weight-400 color-blue-light">JUN</p>
+            </div>
+          </div>
         </div>
 
         <!-- SHARED FOLDERS -->
-        <div>
+        <div class="shared-folder">
           <h2 class="section-title font-xl color-purple-light font-weight-600">Shared Folders</h2>
           <!-- SHARED FOLDER ITEMS -->
           <div class="shared-folder-items flex flex-col justify-center items-start gap-5">

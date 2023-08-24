@@ -1,0 +1,45 @@
+.usage-stats {
+    .chart-container {
+    
+        .vertical-texts {
+            left: 0;
+            top: 10px;
+        }
+
+        .horizontal-texts {
+           bottom: 0;
+           right: 35px;
+        }
+
+        .chart {
+            padding: 30px;
+
+            .bar {
+                width: 20px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    width: 7px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $color-light;
+                    position: absolute;
+                    top: -3px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    z-index: 2;
+                }
+            }
+
+            .bar-purple {
+                background-color: $color-purple;
+            }
+
+            .bar-aquamrine {
+                background-color : $color-aquamarine;
+            }
+        }
+    }
+}
