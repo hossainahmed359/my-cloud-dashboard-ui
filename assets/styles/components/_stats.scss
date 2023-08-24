@@ -1,22 +1,33 @@
 .usage-stats {
     .chart-container {
-    
+
         .vertical-texts {
             left: 0;
             top: 10px;
         }
 
         .horizontal-texts {
-           bottom: 0;
-           right: 35px;
+            bottom: 0;
+            right: 30px;
+            gap: 18px;
+
+
+            @media (min-width: $sm) {
+                right: 35px;
+                gap: 28px;
+            }
         }
 
         .chart {
             padding: 30px;
 
             .bar {
-                width: 20px;
+                width: 15px;
                 position: relative;
+
+                @media (min-width: $sm) {
+                    width: 20px;
+                }
 
                 &::after {
                     content: '';
@@ -30,6 +41,11 @@
                     right: 0;
                     margin: auto;
                     z-index: 2;
+                    opacity: 0;
+
+                    @media (min-width: $sm) {
+                        opacity: 1;
+                    }
                 }
             }
 
@@ -38,7 +54,7 @@
             }
 
             .bar-aquamrine {
-                background-color : $color-aquamarine;
+                background-color: $color-aquamarine;
             }
         }
     }
