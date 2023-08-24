@@ -8,7 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- FONT POPPINS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <!-- SITE TITLE -->
   <title>My Cloud</title>
 </head>
@@ -252,10 +255,123 @@
         </div>
 
 
-        <!-- <div>
-          <div>Recently Uploaded</div>
-          <div>File Manager</div>
-        </div> -->
+        <!-- RECENTLY ADDED & FILE MANAGER -->
+        <div class="recently-added-and-file-manager grid">
+          <!-- RECENTLY UPLOADED -->
+          <div>
+            <h2 class="section-title font-xl color-purple-light font-weight-600">Recently Uploaded</h2>
+            <div class="recently-added-items flex flex-col justify-center items-start gap-7">
+              <!-- ITEM -->
+              <div class="item flex justify-start items-center gap-3 w-100">
+                <div class="flex-center">
+                  <img src="/assets/images/recently-uploaded/img-one.png" alt="marcus-family">
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-col justify-start items-start gap-1 ">
+                    <p class="font-md font-weight-500 color-purple-light">Marcus Family.jpg</p>
+                    <p class="font-sm font-weight-400 color-sky-light">10 oct, 10:23pm</p>
+                  </div>
+                </div>
+                <p class="font-md font-weight-400 color-sky-light">12 MB</p>
+              </div>
+              <!-- ITEM -->
+              <div class="item flex justify-start items-center gap-3 w-100">
+                <div class="flex-center">
+                  <img src="/assets/images/recently-uploaded/img-two.png" alt="marcus-family">
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-col justify-start items-start gap-1 ">
+                    <p class="font-md font-weight-500 color-purple-light">Marcus Family.jpg</p>
+                    <p class="font-sm font-weight-400 color-sky-light">10 oct, 10:23pm</p>
+                  </div>
+                </div>
+                <p class="font-md font-weight-400 color-sky-light">12 MB</p>
+              </div>
+              <!-- ITEM -->
+              <div class="item flex justify-start items-center gap-3 w-100">
+                <div class="flex-center">
+                  <img src="/assets/images/recently-uploaded/img-three.png" alt="marcus-family">
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-col justify-start items-start gap-1 ">
+                    <p class="font-md font-weight-500 color-purple-light">Marcus Family.jpg</p>
+                    <p class="font-sm font-weight-400 color-sky-light">10 oct, 10:23pm</p>
+                  </div>
+                </div>
+                <p class="font-md font-weight-400 color-sky-light">12 MB</p>
+              </div>
+              <!-- ITEM -->
+              <div class="item flex justify-start items-center gap-3 w-100">
+                <div class="flex-center">
+                  <img src="/assets/images/recently-uploaded/img-four.png" alt="marcus-family">
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-col justify-start items-start gap-1 ">
+                    <p class="font-md font-weight-500 color-purple-light">Marcus Family.jpg</p>
+                    <p class="font-sm font-weight-400 color-sky-light">10 oct, 10:23pm</p>
+                  </div>
+                </div>
+                <p class="font-md font-weight-400 color-sky-light">12 MB</p>
+              </div>
+              <!-- ITEM -->
+              <div class="item flex justify-start items-center gap-3 w-100">
+                <div class="flex-center">
+                  <img src="/assets/images/recently-uploaded/img-five.png" alt="marcus-family">
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-col justify-start items-start gap-1 ">
+                    <p class="font-md font-weight-500 color-purple-light">Marcus Family.jpg</p>
+                    <p class="font-sm font-weight-400 color-sky-light">10 oct, 10:23pm</p>
+                  </div>
+                </div>
+                <p class="font-md font-weight-400 color-sky-light">12 MB</p>
+              </div>
+            </div>
+          </div>
+          <!-- FILE MANAGER -->
+          <div>
+            <div class="flex justify-between items-start">
+              <h2 class="section-title font-xl color-purple-light font-weight-600">File Manager</h2>
+              <button class="flex-center">
+                <img src="/assets/images/icons/three-dots-horizontal.svg" alt="">
+              </button>
+            </div>
+            <div class="">
+              <div class="file-manager-card-list grid">
+                <!-- CARD -->
+                <div class="card flex flex-col justify-center items-start gap-2">
+                  <div class="flex-center">
+                    <img src="/assets/images/file-manager/my-folder.svg" alt="">
+                  </div>
+                  <p class="font-md font-weight-500 color-dark">My Folder</p>
+                  <p class="font-sm font-weight-400 color-gray">created Jun 23, 2020</p>
+                </div>
+                <div class="card flex flex-col justify-center items-start gap-2">
+                  <div class="flex-center">
+                    <img src="/assets/images/file-manager/assignment.svg" alt="">
+                  </div>
+                  <p class="font-md font-weight-500 color-dark">Aggreement.pdf</p>
+                  <p class="font-sm font-weight-400 color-gray">created Jun 23, 2020</p>
+                </div>
+                <div class="card flex flex-col justify-center items-start gap-2">
+                  <div class="flex-center">
+                    <img src="/assets/images/file-manager/my-folder.svg" alt="">
+                  </div>
+                  <p class="font-md font-weight-500 color-dark">Other Folder</p>
+                  <p class="font-sm font-weight-400 color-gray">created Jun 23, 2020</p>
+                </div>
+                <div class="card flex flex-col justify-center items-start gap-2">
+                  <div class="flex-center">
+                    <img src="/assets/images/file-manager/assignment.svg" alt="">
+                  </div>
+                  <p class="font-md font-weight-500 color-dark">Blueprints</p>
+                  <p class="font-sm font-weight-400 color-gray">created Jun 23, 2020</p>
+                </div>
+              </div>
+              <!-- <button>Open File Manager</button> -->
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- ========================== OFFCANVAS || SECTION ========================== -->

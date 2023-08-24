@@ -95,3 +95,26 @@
 
     }
 }
+
+
+.file-manager-card-list {
+
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (min-width: $lg) {
+        gap: 20px;
+    }
+
+
+    @media (min-width: $xl) {
+        gap: 30px;
+    }
+
+    .card {
+        min-width: 130px;
+        border-radius: 8.994px;
+        background: #EBEDFB;
+        padding: 15px;
+    }
+}
