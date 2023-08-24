@@ -152,8 +152,9 @@
     </aside>
     <!-- ========================== MAIN || SECTION ========================== -->
     <section class="page-content flex-1 w-100">
-      <div class="page-content__contents ">
-        <div class="folder-card-list grid gap-5">
+      <div class="page-content__contents flex flex-col">
+        <!-- FOLDER CARD LIST -->
+        <div class="folder-card-list grid">
           <div class="card design rounded-md relative flex items-start justify-center flex-col gap-4">
             <button class="more-btn absolute z-10 flex-center">
               <img src="/assets/images/icons/three-dots.svg" alt="">
@@ -208,10 +209,50 @@
           </div>
         </div>
 
+        <!-- QUICK ACESS CARD LIST -->
+        <div class="quick-access-container">
+          <h2 class="title font-xl color-purple-light font-weight-600">Quick Access</h2>
+          <div class="quick-acess-card-list grid">
+            <div class="card rounded-lg relative">
+              <div class="card__top flex-center w-100"
+                style="background-image: url('./assets/images/quick-access/building.png');"></div>
+              <div class="card__bottom flex-center gap-2 w-100">
+                <div class="flex-center">
+                  <img src="/assets/images/icons/gallery.svg" alt="gallery">
+                </div>
+                <p class="font-sm font-weight-700 color-blue">Building Images<span
+                    class="font-weight-400 color-blue-faded">.jpeg</span></p>
+              </div>
+            </div>
+
+            <div class="card rounded-lg relative">
+              <div class="card__top flex-center w-100"
+                style="background-image: url('./assets/images/quick-access/building-two.png');"></div>
+              <div class="card__bottom flex-center gap-2 w-100">
+                <div class="flex-center">
+                  <img src="/assets/images/icons/play.svg" alt="gallery">
+                </div>
+                <p class="font-sm font-weight-700 color-blue">Product Video<span
+                    class="font-weight-400 color-blue-faded">.mp4</span></p>
+              </div>
+            </div>
+
+            <div class="card rounded-lg relative">
+              <div class="card__top flex-center w-100"
+                style="background-image: url('./assets/images/quick-access/building.png');"></div>
+              <div class="card__bottom flex-center gap-2 w-100">
+                <div class="flex-center">
+                  <img src="/assets/images/icons/pdf.svg" alt="gallery">
+                </div>
+                <p class="font-sm font-weight-700 color-blue">Customers<span
+                    class="font-weight-400 color-blue-faded">.pdf</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-        <!-- <div>Quick Access</div>
-        <div>
+        <!-- <div>
           <div>Recently Uploaded</div>
           <div>File Manager</div>
         </div> -->

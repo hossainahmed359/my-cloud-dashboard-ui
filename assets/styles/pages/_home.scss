@@ -51,8 +51,12 @@
 
             &__contents {
 
-                .folder-card-list {
-
+                gap: 50px;
+                
+                .quick-access-container {
+                    .title {
+                        margin-bottom: 20px;
+                    }
                 }
             }
 
