@@ -1,5 +1,49 @@
+// ANIMATIONS
+@keyframes slide-in-offcanvas {
+    0% {
+        margin-left: -250px;
+        opacity: 0;
+    }
 
+    50% {
+        margin-left: -150px;
+        opacity: 0.5;
+    }
 
+    100% {
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out-offcanvas {
+    0% {
+        margin-left: 0px;
+        opacity: 1;
+    }
+
+    50% {
+        margin-left: -150px;
+        opacity: 0.5;
+    }
+
+    100% {
+        margin-left: -250px;
+        opacity: 0;
+    }
+}
+
+.left-offcanvas-slide-in {
+    -webkit-animation: slide-in-offcanvas 0.3s linear;
+    animation: slide-in-offcanvas 0.3s linear;
+}
+
+.left-offcanvas-slide-out  {
+    -webkit-animation: slide-out-offcanvas 0.3s linear;
+    animation: slide-out-offcanvas 0.3s linear;
+}
+
+// MAIN DESIGN
 .sidebar-left {
 
     border-right: 1px solid $color-gray-faded;
@@ -115,7 +159,7 @@
     }
 }
 
-
+// RESPONSIVE INTERACTIONS
 .sidebar-left.offcanvas:not(.open) {
     @media (max-width: $md) {
         margin-left: -250px;
