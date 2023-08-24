@@ -1,6 +1,20 @@
 .folder-card-list {
+
+    @media (min-width: $md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    @media (min-width: $xl) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     .card {
-        width: 193px;
+        min-width: 193px;
         padding: 21px;
         // height: 193px;
 

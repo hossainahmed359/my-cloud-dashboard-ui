@@ -5,7 +5,9 @@
 
     .main-content {
 
-        .sidebar-left,.page-content,.sidebar-right {
+        .sidebar-left,
+        .page-content,
+        .sidebar-right {
             @media (max-width: $lg) {
                 padding-top: 99px;
             }
@@ -18,11 +20,11 @@
             &__contents {
                 padding: 33px 20px;
 
-        
+
                 @media (min-width: $lg) {
                     padding: 33px 40px;
                 }
-        
+
             }
         }
 
@@ -37,9 +39,24 @@
             }
         }
 
-        // .page-content {
+        .page-content {
+            @media (max-width: $lg) {
+                margin-left: 250px;
+            }
 
-        // }
+
+            @media (min-width: $lg) {
+                margin-left: 270px;
+            }
+
+            &__contents {
+
+                .folder-card-list {
+
+                }
+            }
+
+        }
 
         .sidebar-right {
             width: 396px;
