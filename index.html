@@ -369,7 +369,9 @@
                 </div>
               </div>
               <div class="w-100">
-                <button class="open-file-manager-btn rounded-sm font-md font-weight-400 color-purple flex-center w-100">Open File Manager</button>
+                <button
+                  class="open-file-manager-btn rounded-sm font-md font-weight-400 color-purple flex-center w-100">Open
+                  File Manager</button>
               </div>
             </div>
           </div>
@@ -377,9 +379,109 @@
       </div>
     </section>
     <!-- ========================== OFFCANVAS || SECTION ========================== -->
-    <section class="sidebar-right fixed h-screen d-none">
-      <div class="sidebar-right__contents">
-        Right Offcanvas
+    <section class="sidebar-right fixed h-screen z-10">
+      <div class="sidebar-right__contents grid gap-10">
+        <!-- USAGE STATS -->
+        <div>
+          <h2 class="section-title font-xxl color-purple-dark font-weight-600">Usage Stats</h2>
+        </div>
+
+        <!-- SHARED FOLDERS -->
+        <div>
+          <h2 class="section-title font-xl color-purple-light font-weight-600">Shared Folders</h2>
+          <!-- SHARED FOLDER ITEMS -->
+          <div class="shared-folder-items flex flex-col justify-center items-start gap-5">
+            <!-- ITEM -->
+            <div class="item flex justify-start items-center gap-3 w-100">
+              <div class="img-container rounded-md flex-center">
+                <img src="/assets/images/icons/folder-share.svg" alt="marcus-family">
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between items-start">
+                  <div class="flex flex-col justify-start items-start">
+                    <p class="font-sm font-weight-500 color-purple-light">Sketch Files</p>
+                    <p class="font-xs font-weight-400 color-sky-light">Shared with: mike@getnextdesign.com</p>
+                  </div>
+                  <p class="font-xs font-weight-400 color-sky-light">10 oct, 10:23pm</p>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM -->
+            <div class="item flex justify-start items-center gap-3 w-100">
+              <div class="img-container rounded-md flex-center">
+                <img src="/assets/images/icons/folder-share.svg" alt="marcus-family">
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between items-start">
+                  <div class="flex flex-col justify-start items-start">
+                    <p class="font-sm font-weight-500 color-purple-light">AutoCad Drawings</p>
+                    <p class="font-xs font-weight-400 color-sky-light">Shared with: shakir@gmail.com</p>
+                  </div>
+                  <p class="font-xs font-weight-400 color-sky-light">10 oct, 10:23pm</p>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM -->
+            <div class="item flex justify-start items-center gap-3 w-100">
+              <div class="img-container rounded-md flex-center">
+                <img src="/assets/images/icons/folder-share.svg" alt="marcus-family">
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between items-start">
+                  <div class="flex flex-col justify-start items-start">
+                    <p class="font-sm font-weight-500 color-purple-light">Master Speardsheets</p>
+                    <p class="font-xs font-weight-400 color-sky-light">Shared with: john@google.com</p>
+                  </div>
+                  <p class="font-xs font-weight-400 color-sky-light">10 oct, 10:23pm</p>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM -->
+            <div class="item flex justify-start items-center gap-3 w-100">
+              <div class="img-container rounded-md flex-center">
+                <img src="/assets/images/icons/folder-share.svg" alt="marcus-family">
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between items-start">
+                  <div class="flex flex-col justify-start items-start">
+                    <p class="font-sm font-weight-500 color-purple-light">Design Comps</p>
+                    <p class="font-xs font-weight-400 color-sky-light">Shared with: kelvin@hunter.com</p>
+                  </div>
+                  <p class="font-xs font-weight-400 color-sky-light">10 oct, 10:23pm</p>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM -->
+            <div class="item flex justify-start items-center gap-3 w-100">
+              <div class="img-container rounded-md flex-center">
+                <img src="/assets/images/icons/folder-share.svg" alt="marcus-family">
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between items-start">
+                  <div class="flex flex-col justify-start items-start">
+                    <p class="font-sm font-weight-500 color-purple-light">Final Revisions</p>
+                    <p class="font-xs font-weight-400 color-sky-light">Shared with: saim@purepixel.com</p>
+                  </div>
+                  <p class="font-xs font-weight-400 color-sky-light">10 oct, 10:23pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INVITATION CARD -->
+        <div class="invitation-card relative">
+          <div class="card top-card rounded-md w-100 absolute z-10">
+            <div class="w-100 h-100 flex flex-col justify-center items-start gap-2">
+              <div>
+                <p class="font-lg font-weight-300 color-gray-light">Invite 2 friends and get</p>
+                <p class="font-lg font-weight-300 color-gray-light">5 GB extra space.</p>
+              </div>
+              <button class="rounded-sm font-md font-weight-400 color-purple">Invite Now!</button>
+            </div>
+          </div>
+          <div class="card bottom-card rounded-md w-100"></div>
+        </div>
       </div>
     </section>
   </main>

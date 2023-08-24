@@ -77,7 +77,7 @@
             min-width: 226px;
         }
 
-       
+
 
         &__top {
             height: 117px;
@@ -124,5 +124,34 @@
         border-radius: 8.994px;
         background: #EBEDFB;
         padding: 15px;
+    }
+}
+
+
+.invitation-card {
+    margin-top: 30px;
+    .card {
+        display: block;
+        height: 126px;
+        padding: 20px;
+    }
+
+    .top-card {
+        background: $color-purple;
+        left: -30px;
+        top: -30px;
+        background-image: url('/assets//images/invitaiton/invite-bg.svg');
+        background-position: top right;
+        background-repeat: no-repeat;
+
+        button {
+            background-color: $color-aquamarine;
+            padding: 7px 13px;
+        }
+    }
+
+    .bottom-card {
+        border: 1px dashed #D0C9FF;
+        background: #F6F4FF;
     }
 }
