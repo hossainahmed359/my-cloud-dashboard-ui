@@ -29,6 +29,8 @@
         }
 
         .sidebar-left {
+            
+
             @media (max-width: $lg) {
                 width: 251px;
             }
@@ -38,19 +40,20 @@
                 width: 270px;
             }
         }
+        
 
         .page-content {
-            @media (max-width: $lg) {
-                margin-left: 250px;
+            margin-left: 250px;
+
+            @media (max-width: $md) {
+               margin-left: 0;
             }
-
-
+           
             @media (min-width: $lg) {
                 margin-left: 270px;
             }
 
             
-
             &__contents {
 
                 gap: 50px;

@@ -26,7 +26,11 @@
             transition: all 0.2s;
             display: none;
 
-            @media (max-width: $xl) {
+            // @media (max-width: $xl) {
+            //     display: block;
+            // }
+
+            @media (max-width: $md) {
                 display: block;
             }
 

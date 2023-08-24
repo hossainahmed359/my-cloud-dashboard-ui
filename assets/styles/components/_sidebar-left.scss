@@ -1,6 +1,4 @@
-// @media (min-width: $lg) {
-//     width: 251px;
-// }
+
 
 .sidebar-left {
 
@@ -114,5 +112,12 @@
         }
 
 
+    }
+}
+
+
+.sidebar-left.offcanvas:not(.open) {
+    @media (max-width: $md) {
+        margin-left: -250px;
     }
 }
