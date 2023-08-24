@@ -258,7 +258,7 @@
         <!-- RECENTLY ADDED & FILE MANAGER -->
         <div class="recently-added-and-file-manager grid">
           <!-- RECENTLY UPLOADED -->
-          <div>
+          <div class="recently-added">
             <h2 class="section-title font-xl color-purple-light font-weight-600">Recently Uploaded</h2>
             <div class="recently-added-items flex flex-col justify-center items-start gap-7">
               <!-- ITEM -->
@@ -329,14 +329,14 @@
             </div>
           </div>
           <!-- FILE MANAGER -->
-          <div>
-            <div class="flex justify-between items-start">
+          <div class="file-manager">
+            <div class="file-manager__title-container flex justify-between items-start">
               <h2 class="section-title font-xl color-purple-light font-weight-600">File Manager</h2>
               <button class="flex-center">
                 <img src="/assets/images/icons/three-dots-horizontal.svg" alt="">
               </button>
             </div>
-            <div class="">
+            <div class="file-manager__body grid gap-7">
               <div class="file-manager-card-list grid">
                 <!-- CARD -->
                 <div class="card flex flex-col justify-center items-start gap-2">
@@ -368,7 +368,9 @@
                   <p class="font-sm font-weight-400 color-gray">created Jun 23, 2020</p>
                 </div>
               </div>
-              <!-- <button>Open File Manager</button> -->
+              <div class="w-100">
+                <button class="open-file-manager-btn rounded-sm font-md font-weight-400 color-purple flex-center w-100">Open File Manager</button>
+              </div>
             </div>
           </div>
         </div>

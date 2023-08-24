@@ -52,7 +52,7 @@
             &__contents {
 
                 gap: 50px;
-                
+
                 .recently-added-and-file-manager {
 
                     gap: 50px;
@@ -64,13 +64,24 @@
                     @media (min-width: $lg) {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                
+
                     .item {
                         img {
                             width: 44px;
                             height: 44px;
                         }
                     }
+
+                    .file-manager {
+                        &__body {
+                            .open-file-manager-btn {
+                                padding: 13px;
+                                background-color: $color-gray-light;
+                            }
+                        }
+
+                    }
+
                 }
             }
 
