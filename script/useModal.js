@@ -37,14 +37,16 @@ export default function useModal() {
             backdrop.classList.add('d-none');
             modalContainer.classList.add('d-none');
             modalContainer.classList.remove('slide-out-top');
+
+            // CLEAN UP MODAL BODY AND CRATE THE DEFAULT HEADER
+            modalHeader.innerHTML = `<h2 class="font-xl color-purple-dark font-weight-600">Modal</h2>`
+            modalBody.innerHTML = ``;
         }, 300)
     }
 
     // APPEND MODAL HEADER
     function appendModalHeader(element) {
-        if (!element) {
-            modalHeader.innerHTML = `<h2 class="font-xl color-purple-dark font-weight-600">Modal</h2>`;
-        } else {
+        if(element) {
             modalHeader.innerHTML = element;
         }
     }

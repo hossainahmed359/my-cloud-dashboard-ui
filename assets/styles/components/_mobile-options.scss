@@ -1,0 +1,11 @@
+.mobile-option-list {
+    &__items {
+        .item {
+            padding: 10px 15px;
+            cursor: pointer;
+            &:hover {
+                background-color: $color-gray-faded;
+            }
+        }
+    }
+}
