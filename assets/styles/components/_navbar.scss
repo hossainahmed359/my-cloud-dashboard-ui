@@ -1,5 +1,6 @@
+
 .navbar {
-    padding: 20px 35px;
+    padding: 10px 35px;
     border-bottom: 1px solid $color-gray-faded;
 
     @media (min-width: $lg) {
@@ -34,11 +35,6 @@
 
             @media (max-width: $md) {
                 display: block;
-            }
-
-            &:hover {
-                background-color: $color-purple-faded;
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
             }
 
             img {
@@ -145,9 +141,22 @@
     &__bell-and-profile {
 
         
-
         @media (min-width: $xl) {
             gap: 36px;
+        }
+
+        .mobile__inputs {
+
+            @media (min-width: $md) {
+                display: none;
+            }
+
+            img {
+                height: 20px;
+                svg {
+                    fill: $color-dark;
+                }
+            }
         }
 
         .bell-icon {

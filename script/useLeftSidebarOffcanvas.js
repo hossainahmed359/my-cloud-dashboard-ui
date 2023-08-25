@@ -15,7 +15,7 @@ export default function useLeftSidebarOffcanvas() {
         element.classList.add('open');
         setTimeout(function () {
             element.classList.remove('left-offcanvas-slide-in');
-        }, [300])
+        }, 300)
     }
 
     // SIDEBAR CLOSE
@@ -24,7 +24,7 @@ export default function useLeftSidebarOffcanvas() {
         element.classList.remove('open');
         setTimeout(function () {
             element.classList.remove('left-offcanvas-slide-out');
-        }, [300])
+        }, 300)
     }
 
 

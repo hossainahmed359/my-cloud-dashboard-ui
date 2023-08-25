@@ -21,10 +21,24 @@
 
 <body id="home" class="home">
 
-  <!-- RIGHT OFFCANVAS OPENER -->
+  <!-- ========================== RIGHT OFFCANVAS OPENER ========================== -->
   <button id="right-offcanvas-opener-btn" class="offcanvas-opener-btn fixed flex-center z-10 rounded-full">
     <img src="/assets/images/icons/gear.svg" alt="gear">
   </button>
+
+
+  <!-- ========================== MOBILE SEARCH INPUT ========================== -->
+  <div id="modal-backdrop" class="modal modal-backdrop d-none">
+    <div id="modal-container" class="modal-container rounded-lg d-none">
+      <div class="modal-title-section flex justify-between items-center">
+        <h2 class=" font-xl color-purple-dark font-weight-600">Modal</h2>
+        <button id="modal-close-btn" class="modal-close-btn flex-center rounded-full">
+          <img src="/assets/images/icons/close-light.svg" alt="">
+        </button>
+      </div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus at aspernatur excepturi omnis error eligendi, animi ea est consequatur delectus dolorum id tempora quod exercitationem sit maxime voluptate eveniet nulla odio laborum voluptatem! Magni deserunt temporibus veritatis dolor, repellat totam rerum repellendus officia possimus optio similique distinctio corrupti inventore tempore architecto. Pariatur ad autem facere labore, temporibus velit deserunt sint est asperiores, natus blanditiis id eaque ipsam sit nesciunt repudiandae suscipit quidem esse vero! Doloribus at vitae quaerat illo perspiciatis nemo quo deleniti similique eum non voluptate, cumque molestiae enim totam ipsam minima corporis, atque dolor autem magnam eveniet. Iure.
+    </div>
+  </div>
 
   <!-- ========================== HEADER ========================== -->
   <header class="navbar fixed z-50 w-100 flex justify-between items-center bg-light gap-5">
@@ -40,11 +54,6 @@
       <button id="left-sidebar-toggler-btn" class="menu-icon-container flex-center">
         <img src="/assets/images/icons/menu.svg" alt="">
       </button>
-      <!-- MOBIE INPUTS -->
-      <!-- <div class="navbar__mobile-inputs flex-end gap-3">
-        <div>Search</div>
-        <div>Filter</div>
-      </div> -->
     </div>
     <!-- INPUT SECTION -->
     <div class="navbar__inputs flex-1 flex-start gap-3">
@@ -66,6 +75,15 @@
 
     <!-- BELL ICON & PROFILE -->
     <div class="navbar__bell-and-profile flex-start gap-3">
+      <!-- MOBILE SEARCH -->
+      <div class="mobile__inputs flex-end gap-3">
+        <button id="mobile-search-btn" class="flex-center">
+          <img class="mobile-search-icon" src="/assets/images/icons/mobile-search.svg" alt="">
+        </button>
+        <button id="mobile-filter-btn" class="flex-center">
+          <img class="mobile-filter-icon" src="/assets/images/icons/filter-circle.svg" alt="">
+        </button>
+      </div>
       <button class="flex-center bell-icon-container">
         <img class="bell-icon" src="/assets/images/icons/bell.svg" alt="bell icon">
       </button>

@@ -3,11 +3,12 @@ import './assets/styles/main.scss';
 import userAddEvent from './script/useAddEvent';
 import useLeftSidebarOffcanvas from './script/useLeftSidebarOffcanvas';
 import userRightOffcanvas from './script/userRightOffcanvas';
+import useModal from './script/useModal';
 
 const { addEventToMultitpleElements } = userAddEvent();
 const { leftSidebarState, handleLeftSidebarOpen, handleLeftSidebarClose } = useLeftSidebarOffcanvas();
-const { rightOffcanvasState, handleRightOffcanvasOpen, handleRightOffcanvasClose } = userRightOffcanvas();
-
+const { handleRightOffcanvasOpen, handleRightOffcanvasClose } = userRightOffcanvas();
+const { handleModalOpen, handleModalClose } = useModal();
 
 function leftSidebarToggler() {
     const isOpen = leftSidebarState['isOpen'];
@@ -42,3 +43,14 @@ const eventItemList = [
 ]
 
 addEventToMultitpleElements(eventItemList);
+
+
+setTimeout(() => {
+    handleModalOpen()
+}, 3000);
+
+
+setTimeout(() => {
+    handleModalClose()
+}, 5000);
+
