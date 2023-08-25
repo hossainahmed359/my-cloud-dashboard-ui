@@ -17,11 +17,15 @@
     .card {
         // min-width: 193px;
         padding: 21px;
-        // height: 193px;
+        min-height: 154px;
 
         .more-btn {
             right: 22px;
-            top: 25px;
+            top: 27px;
+
+            img {
+                height: 21px;
+            }
         }
     }
 
@@ -72,6 +76,11 @@
 
         overflow: hidden;
         // min-width: 200px;
+        min-height: 173px;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
 
         @media (min-width: $xl) {
             min-width: 226px;
@@ -124,12 +133,17 @@
         border-radius: 8.994px;
         background: #EBEDFB;
         padding: 15px;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
     }
 }
 
 
 .invitation-card {
     margin-top: 30px;
+
     .card {
         display: block;
         height: 126px;
