@@ -1,9 +1,18 @@
 
+import useAddEvent from "./useAddEvent";
+const { addEventToSingleElement } = useAddEvent();
+
 export default function useModal() {
 
     // ELEMENT
     const backdrop = document.getElementById('modal-backdrop');
     const modalContainer = document.getElementById('modal-container');
+
+    addEventToSingleElement({
+        id: 'modal-close-btn',
+        event: 'click',
+        callback: handleModalClose
+    })
 
     // SIDEBAR OPENE
     function handleModalOpen() {
@@ -20,7 +29,7 @@ export default function useModal() {
     function handleModalClose() {
 
         modalContainer.classList.add('slide-out-top');
-        
+
         setTimeout(function () {
             backdrop.classList.add('d-none');
             modalContainer.classList.add('d-none');
@@ -29,5 +38,5 @@ export default function useModal() {
     }
 
 
-    return {  handleModalOpen, handleModalClose }
+    return { handleModalOpen, handleModalClose }
 }

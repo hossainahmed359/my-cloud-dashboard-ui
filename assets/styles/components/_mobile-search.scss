@@ -1,0 +1,22 @@
+input[type='text'].mobile-search-input {
+    margin-top: -7px;
+    border: 1px solid $color-gray-light;
+    padding: 6px 20px;
+}
+
+.quick-search-elemnts {
+    .quick-search-header {
+        margin-bottom: 10px;
+    }
+
+    .quick-search-elemnts-items {
+        .item {
+            cursor: pointer;
+            padding: 10px 10px;
+
+            &:hover {
+                background: $color-gray-faded;
+            }
+        }
+    }
+}

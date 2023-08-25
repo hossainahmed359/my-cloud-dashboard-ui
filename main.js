@@ -40,17 +40,19 @@ const eventItemList = [
         event: 'click',
         callback: handleRightOffcanvasClose
     },
+    {
+        id: 'mobile-search-btn',
+        event: 'click',
+        callback: handleModalOpen
+    },
+    {
+        id: 'mobile-filter-btn',
+        event: 'click',
+        callback: handleModalOpen
+    },
 ]
 
 addEventToMultitpleElements(eventItemList);
 
 
-setTimeout(() => {
-    handleModalOpen()
-}, 3000);
-
-
-setTimeout(() => {
-    handleModalClose()
-}, 5000);
 
