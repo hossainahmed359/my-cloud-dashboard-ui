@@ -8,6 +8,9 @@ export default function useModal() {
     const backdrop = document.getElementById('modal-backdrop');
     const modalContainer = document.getElementById('modal-container');
 
+    const modalHeader = document.getElementById('modal-header');
+    const modalBody = document.getElementById('modal-body');
+
     addEventToSingleElement({
         id: 'modal-close-btn',
         event: 'click',
@@ -37,6 +40,27 @@ export default function useModal() {
         }, 300)
     }
 
+    // APPEND MODAL HEADER
+    function appendModalHeader(element) {
+        if (!element) {
+            modalHeader.innerHTML = `<h2 class="font-xl color-purple-dark font-weight-600">Modal</h2>`;
+        } else {
+            modalHeader.innerHTML = element;
+        }
+    }
 
-    return { handleModalOpen, handleModalClose }
+    // APPENT MODAL BODY CONTENT
+    function appendModalBodyContent(element) {
+        if(!element) {
+            modalBody.innerHTML = `
+            <div class='w-100 h-100 flex-center'>
+                <p>No Contets!</p>
+            </div>`;
+        } else {
+            modalBody.innerHTML = element;
+        }
+    }
+
+
+    return { appendModalHeader, appendModalBodyContent,handleModalOpen, handleModalClose }
 }

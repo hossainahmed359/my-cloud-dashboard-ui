@@ -4,17 +4,19 @@ import userAddEvent from './script/useAddEvent';
 import useLeftSidebarOffcanvas from './script/useLeftSidebarOffcanvas';
 import userRightOffcanvas from './script/userRightOffcanvas';
 import useModal from './script/useModal';
+import useMobileSearch from './script/useMobileSearch';
 
 const { addEventToMultitpleElements } = userAddEvent();
 const { leftSidebarState, handleLeftSidebarOpen, handleLeftSidebarClose } = useLeftSidebarOffcanvas();
 const { handleRightOffcanvasOpen, handleRightOffcanvasClose } = userRightOffcanvas();
-const { handleModalOpen, handleModalClose } = useModal();
+const { handleModalOpen, appendModalHeader, appendModalBodyContent } = useModal();
+const { handleMobileSearchModalOpen } = useMobileSearch();
 
 function leftSidebarToggler() {
     const isOpen = leftSidebarState['isOpen'];
-    
-    if(isOpen) {
-        handleLeftSidebarClose() 
+
+    if (isOpen) {
+        handleLeftSidebarClose()
     } else {
         handleLeftSidebarOpen();
     }
@@ -43,7 +45,7 @@ const eventItemList = [
     {
         id: 'mobile-search-btn',
         event: 'click',
-        callback: handleModalOpen
+        callback: handleMobileSearchModalOpen
     },
     {
         id: 'mobile-filter-btn',
