@@ -22,14 +22,15 @@
         }
 
         .menu-icon-container {
-            margin-left: 10px;
+            margin-left: 5px;
             padding: 5px;
             transition: all 0.2s;
             display: none;
 
-            // @media (max-width: $xl) {
-            //     display: block;
-            // }
+
+            @media (max-width: $sm) {
+                margin-left: 5px;
+            }
 
             @media (max-width: $md) {
                 display: block;
@@ -49,6 +50,10 @@
     }
 
     &__inputs {
+
+        @media (max-width: $md) {
+            display: none;
+        }
 
         .search-input-container,
         .select-input-container>select {
@@ -138,6 +143,17 @@
     }
 
     &__bell-and-profile {
+
+        
+
+        @media (min-width: $xl) {
+            gap: 36px;
+        }
+
+        .bell-icon {
+            height: 20px;
+        }
+
         .profile-icon-container {
             overflow: hidden;
 
@@ -145,6 +161,11 @@
                 width: 50px;
                 height: 50px;
                 object-fit: cover;
+
+                @media (max-width: $md) {
+                    width: 40px;
+                    height: 40px;
+                }
             }
         }
 
