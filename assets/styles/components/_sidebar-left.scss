@@ -1,5 +1,5 @@
 // ANIMATIONS
-@keyframes slide-in-offcanvas {
+@keyframes left__sidebar-slide-in-offcanvas {
     0% {
         margin-left: -250px;
         opacity: 0;
@@ -16,7 +16,7 @@
     }
 }
 
-@keyframes slide-out-offcanvas {
+@keyframes left__sidebar-slide-out-offcanvas {
     0% {
         margin-left: 0px;
         opacity: 1;
@@ -34,13 +34,13 @@
 }
 
 .left-offcanvas-slide-in {
-    -webkit-animation: slide-in-offcanvas 0.3s linear;
-    animation: slide-in-offcanvas 0.3s linear;
+    -webkit-animation: left__sidebar-slide-in-offcanvas 0.3s linear;
+    animation: left__sidebar-slide-in-offcanvas 0.3s linear;
 }
 
 .left-offcanvas-slide-out  {
-    -webkit-animation: slide-out-offcanvas 0.3s linear;
-    animation: slide-out-offcanvas 0.3s linear;
+    -webkit-animation: left__sidebar-slide-out-offcanvas 0.3s linear;
+    animation: left__sidebar-slide-out-offcanvas 0.3s linear;
 }
 
 // MAIN DESIGN

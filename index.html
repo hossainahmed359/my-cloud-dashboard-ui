@@ -20,6 +20,12 @@
 <!-- ========================== MAIN BODY ========================== -->
 
 <body id="home" class="home">
+
+  <!-- RIGHT OFFCANVAS OPENER -->
+  <button id="right-offcanvas-opener-btn" class="offcanvas-opener-btn fixed flex-center z-10 rounded-full">
+    <img src="/assets/images/icons/gear.svg" alt="gear">
+  </button>
+
   <!-- ========================== HEADER ========================== -->
   <header class="navbar fixed z-50 w-100 flex justify-between items-center bg-light gap-5">
     <!-- LOGO & ASIDE OPENER BTN -->
@@ -254,7 +260,6 @@
           </div>
         </div>
 
-
         <!-- RECENTLY ADDED & FILE MANAGER -->
         <div class="recently-added-and-file-manager grid">
           <!-- RECENTLY UPLOADED -->
@@ -378,12 +383,18 @@
         </div>
       </div>
     </section>
+
     <!-- ========================== OFFCANVAS || SECTION ========================== -->
-    <section class="sidebar-right fixed h-screen z-10 scrollbox ">
+    <section id="offcanvas-right" class="sidebar-right offcanvas fixed h-screen z-10 scrollbox">
       <div class="sidebar-right__contents grid gap-10">
         <!-- USAGE STATS -->
         <div class="usage-stats">
-          <h2 class="section-title font-xxl color-purple-dark font-weight-600">Usage Stats</h2>
+          <div class="flex justify-between items-center">
+            <h2 class="section-title font-xxl color-purple-dark font-weight-600">Usage Stats</h2>
+            <button id="left-offcanvas-close-btn" class="left-offcanvas-close-btn flex-center rounded-full">
+              <img src="/assets/images/icons/close-light.svg" alt="">
+            </button>
+          </div>
           <div class="chart-container w-100 relative">
             <!-- VERTICAL TEXTS -->
             <div class="vertical-texts absolute flex flex-col justify-center items-start gap-3">
@@ -520,6 +531,7 @@
         </div>
       </div>
     </section>
+
   </main>
   <!-- ========================== FOOTER ========================== -->
   <!-- <footer class="footer">Footer</footer> -->
