@@ -67,4 +67,9 @@ const eventItemList = [
 addEventToMultitpleElements(eventItemList);
 
 
+// Manually Open Right Offcanvas
+setTimeout(() => {
+    handleRightOffcanvasOpen();
+}, 3000);
+
 
