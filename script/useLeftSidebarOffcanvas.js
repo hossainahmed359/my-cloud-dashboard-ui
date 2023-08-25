@@ -11,6 +11,8 @@ export default function useLeftSidebarOffcanvas() {
 
     // SIDEBAR OPENE
     function handleLeftSidebarOpen() {
+        leftSidebarState['isOpen'] = true;
+        
         element.classList.add('left-offcanvas-slide-in');
         element.classList.add('open');
         setTimeout(function () {
@@ -20,6 +22,8 @@ export default function useLeftSidebarOffcanvas() {
 
     // SIDEBAR CLOSE
     function handleLeftSidebarClose() {
+        leftSidebarState['isOpen'] = false;
+
         element.classList.add('left-offcanvas-slide-out');
         element.classList.remove('open');
         setTimeout(function () {

@@ -1,17 +1,15 @@
 import './assets/styles/main.scss';
-
-import userAddEvent from './script/useAddEvent';
+import useAddEvent from './script/useAddEvent';
 import useLeftSidebarOffcanvas from './script/useLeftSidebarOffcanvas';
 import userRightOffcanvas from './script/userRightOffcanvas';
-import useModal from './script/useModal';
 import useMobileSearch from './script/useMobileSearch';
 import useMobileSelect from './script/userMobileSelect';
 
-const { addEventToMultitpleElements } = userAddEvent();
+const { addEventToMultitpleElements } = useAddEvent();
 const { leftSidebarState, handleLeftSidebarOpen, handleLeftSidebarClose } = useLeftSidebarOffcanvas();
-const { handleRightOffcanvasOpen, handleRightOffcanvasClose } = userRightOffcanvas();
+const { rightOffcanvasState, handleRightOffcanvasOpen, handleRightOffcanvasClose } = userRightOffcanvas();
 const { handleMobileSearchModalOpen } = useMobileSearch();
-const {handleMobileSelectModalOpen} = useMobileSelect();
+const { handleMobileSelectModalOpen } = useMobileSelect();
 
 function leftSidebarToggler() {
     const isOpen = leftSidebarState['isOpen'];
@@ -21,10 +19,15 @@ function leftSidebarToggler() {
     } else {
         handleLeftSidebarOpen();
     }
-
-    leftSidebarState['isOpen'] = !isOpen;
 }
 
+function cleanUpAllOpenedOffcanvas() {
+    const isLeftSidebarOpen = leftSidebarState['isOpen'];
+    isLeftSidebarOpen && handleLeftSidebarClose();
+
+    const isRightOffcanvasOpen = rightOffcanvasState['isOpen'];
+    isRightOffcanvasOpen && handleRightOffcanvasClose();
+}
 
 
 const eventItemList = [
@@ -46,12 +49,18 @@ const eventItemList = [
     {
         id: 'mobile-search-btn',
         event: 'click',
-        callback: handleMobileSearchModalOpen
+        callback: () => {
+            cleanUpAllOpenedOffcanvas();
+            handleMobileSearchModalOpen();
+        }
     },
     {
         id: 'mobile-filter-btn',
         event: 'click',
-        callback: handleMobileSelectModalOpen
+        callback: () => {
+            cleanUpAllOpenedOffcanvas();
+            handleMobileSelectModalOpen();
+        }
     },
 ]
 

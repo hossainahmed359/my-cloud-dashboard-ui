@@ -69,7 +69,7 @@
 
     @media (min-width: $xxl) {
         grid-template-columns: repeat(5, 1fr);
-        gap: 40px;
+        gap: 30px;
     }
 
     .card {
@@ -161,6 +161,11 @@
         background-image: url('/assets//images/invitaiton/invite-bg.svg');
         background-position: top right;
         background-repeat: no-repeat;
+
+        @media (max-width:$sm) {
+            left: -15px;
+            top: -20px;
+        }
 
         button {
             background-color: $color-aquamarine;
